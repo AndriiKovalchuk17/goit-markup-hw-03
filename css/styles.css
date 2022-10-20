@@ -2,10 +2,31 @@
 :root {
     --main-title-color: #212121;
     --second-title-color: #FFFFFF;
+    
+}
+p, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+}
+button {
+cursor: pointer;
+}
+img {
+    display: block;
 }
 
-
-
+address{
+    font-style: normal;
+}
 body {
     font-family: 'roboto', sans-serif;
     background-color: #FFFFFF;;
@@ -16,6 +37,13 @@ body {
 .link {
     text-decoration: none;
 }
+.conteiner {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -30,7 +58,28 @@ body {
 }
 
 /* -----------------------HEADER------------------------- */
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header-conteiner {
+    display: flex;
+    align-items: center;
+    
+}
+.header-connect {
+    margin-left: auto;
+}
+.header-navigation {
+    display: flex;
+    align-items: center;    
+}
+.header-list {
+    display: flex;
+    gap: 50px;
+}
 .header-logo {
+    margin-right: 93px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -55,6 +104,7 @@ body {
 }
 
 .header-item {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -65,6 +115,7 @@ body {
     color: #000000;
 }
 .header-mail {
+    margin-right: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -72,6 +123,7 @@ body {
     color: #757575;
 }
 .header-tel {
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -81,6 +133,8 @@ body {
 /* -----------------------HERO------------------------- */
 .hero {
     background-color: #2F303A;;
+    padding-top: 200px;
+    padding-bottom: 280px;
 }
 .hero-title {
     font-family: inherit;
@@ -93,7 +147,11 @@ body {
     text-transform: uppercase;
     color: var(--second-title-color)
 }
+
+
 .hero-btn {
+    min-width: 216px;
+    height: 50px;
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -105,14 +163,25 @@ body {
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: #2196F3;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
 }
 /* -----------------------Features------------------------- */
 
-.features {}
+.features {
+    padding-top: 94px;
+    
+    
+}
 
-.features-list {}
+.features-list {
+    display: flex;
+    gap: 30px;
+}
 
 .features-title {
+    padding-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -125,25 +194,43 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    gap: 30px;
 }
 /* -----------------------example------------------------- */
 
-.example {}
+.example {
+}
 
 .example-title {
+    padding-top: 94px;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;    
 }
-.example-list {}
+.example-list {
+    display: flex;}
 
-.example-item {}
+.example-item {
+    padding-right: 30px;
+    padding-bottom: 94px;
+    padding-top: 50px;
+    
+}
 /* -----------------------team------------------------- */
-.team {}
+.team {
+    
+    padding-top: 94px 0;
+    background: #F5F4FA;;
+}
 
+.team-lid {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 .team-title {
+    
+    padding-top: 94px;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -151,19 +238,34 @@ body {
     color: var(--main-title-color);
 }
 
-.team-list {}
+.team-list {
+    
+    display: flex;
+    gap: 30px;
+    flex: auto;
+}
 
-.team-item {}
+.team-item {
+    
+    width: calc((100% - 60px) / 3);
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
 
 .team-item-title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    color: var(--main-title-color)
+    color: var(--main-title-color);
 }
 
 .team-item-text {
+    padding-bottom: 30px;
+    text-align: center;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -172,8 +274,12 @@ body {
 /* -----------------------footer------------------------ */
 .footer {
     background-color: #2F303A;;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-
+.footer-logo {
+    
+}
 .footer-logo {
     font-family: 'Raleway';
     font-style: normal;
@@ -183,12 +289,16 @@ body {
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-
+.logo-wrap {
+    padding-bottom: 20px;
+}
 .footer-logo-spn {
     color: #2196F3;
 }
 
-.footer-address {}
+.footer-address {
+    
+}
 
 .footer-addres-list {
         font-style: normal;
@@ -198,14 +308,15 @@ body {
         color: var(--second-title-color);
 }
 
-.footer-item {}
+.footer-item {
+    padding-bottom: 9px;
+}
 
 .footer-map-link {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--second-title-color)
-    
+    color: var(--second-title-color);
 }
 
 .footer-mail {
@@ -226,28 +337,52 @@ body {
 .filter-btn:focus {
     background-color: #2196F3;
 }
+
+
 .filter-list {
-    
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+    padding-top: 94px;
+    padding-bottom: 34px;
+
 }
 .filter-item {
+    
 }
 
 .filter-btn {
+    align-items: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #F5F4FA;
+        border-radius: 4px;
 }
 
 /* --------------------portfolio---------------------------- */
 
-.portfolio {}
+.portfolio {
+    padding-bottom: 47px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
-.portfolio-list {}
+
+.portfolio-list {
+    
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
 
 .portfolio-title {
+    padding: 20px 24px 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -256,9 +391,9 @@ body {
 }
 
 .portfolio-item {
+    padding: 0 24px 20px;
     font-size: 16px;
     line-height: 1.88;
-    /* identical to box height, or 188% */
     letter-spacing: 0.03em;
     color: #757575;
 }
