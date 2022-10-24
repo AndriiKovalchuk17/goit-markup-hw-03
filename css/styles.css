@@ -137,7 +137,7 @@ body {
 .hero {
     background-color: #2F303A;;
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 .hero-title {
     font-family: inherit;
@@ -202,10 +202,11 @@ body {
 /* -----------------------example------------------------- */
 
 .example {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .example-title {
-    padding-top: 94px;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -216,15 +217,16 @@ body {
     display: flex;}
 
 .example-item {
-    padding-right: 30px;
-    padding-bottom: 94px;
-    padding-top: 50px;
+    margin-right: 30px;
+    margin-top: 50px;
+    
+    
     
 }
 /* -----------------------team------------------------- */
 .team {
-    
-    padding-top: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
     background: #F5F4FA;;
 }
 
@@ -233,7 +235,7 @@ body {
 }
 .team-title {
     
-    padding-top: 94px;
+    
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -242,17 +244,14 @@ body {
 }
 
 .team-list {
-    
     display: flex;
-    gap: 30px;
     flex: auto;
 }
 
 .team-item {
-    
     width: calc((100% - 60px) / 3);
-    padding-top: 50px;
-    padding-bottom: 94px;
+    margin-top: 50px;
+    margin-right: 30px;
 }
 
 .team-item-title {
@@ -346,8 +345,7 @@ body {
     justify-content: center;
     display: flex;
     gap: 8px;
-    padding-top: 94px;
-    padding-bottom: 34px;
+    margin-bottom: 50px;
 
 }
 .filter-item {
@@ -355,6 +353,7 @@ body {
 }
 
 .filter-btn {
+    padding: 6px 22px;
     align-items: center;
     font-family: 'Roboto';
     font-style: normal;
@@ -369,23 +368,26 @@ body {
 
 /* --------------------portfolio---------------------------- */
 
+.portfolio-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    
+}
+
 .portfolio {
-    padding-bottom: 47px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-
 .portfolio-list {
-    
     box-sizing: border-box;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
 }
 
 .portfolio-title {
-    padding: 20px 24px 4px;
+    
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -394,9 +396,12 @@ body {
 }
 
 .portfolio-item {
-    padding: 0 24px 20px;
+    
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: #757575;
+}
+.portfolio-text {
+    padding: 20px 24px;
 }
